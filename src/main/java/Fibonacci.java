@@ -19,7 +19,7 @@ public class Fibonacci {
     }
 
     private static long fibonacciMemoized(int n, long[] memo) {
-        long result = 0;
+        long result;
         if (memo[n] != 0) {
             return memo[n];
         } else if (n <= 2) {
